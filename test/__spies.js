@@ -22,6 +22,6 @@ describe('Debug Tool Testing', () => {
     process.env.DEBUG = true; // assume dev set to true
     util.debug('Basic Test', {title: 'none'}, false);
 
-    expect(_this.console.log.callCount).to.equal(0)
+    expect(_this.console.log.callCount).to.equal(1)
   });
 });
